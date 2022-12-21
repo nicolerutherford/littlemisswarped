@@ -1,0 +1,136 @@
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/upside-down.png');
+  background-size: 1500px 1400px;
+  font-size: 15pt;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: fantasy ;
+}
+
+#changefont {
+  font-family: 'IM Fell DW Pica SC', serif;
+  -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  color: #0BF42C;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1 {
+  color: hotpink;
+  text-align: left;
+  padding-left: 20px;
+
+}
+
+.flex-box {
+  display: flex;
+  justify-content:space-between;
+  margin-left: 5px;
+  margin-top: -20px;
+  height: 100px;
+
+
+}
+
+h1{ padding: 10px;
+  height: 60px;
+}
+
+/* unvisited link */
+a:link { text-decoration: inherit;
+  color: hotpink;
+}
+
+/* visited link */
+a:visited { text-decoration: line-through;
+  color: pink;
+}
+
+/* mouse over link */
+a:hover { text-decoration: none;
+  color: black;
+}
+
+
+
+.section {
+  position: relative;
+
+}
+
+.section--top {
+  height: 100vh;
+}
+
+.section--about {
+  padding: 20px;
+  padding-top: 60px;
+}
+
+@media(min-width: 500px) {
+  .section--about {
+    padding: 60px;
+  }
+}
+
+
+.border {
+  border-bottom: 1px solid hotpink;
+}
+
+.contact__text {color: hotpink;}
+
+
+#drawingCanvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.section--contact {
+  padding: 10px;
+  background-color: white;
+  height: 100px;
+
+}
+
+@media(min-width: 500px) {
+  .section--contact {
+    padding: 60px;
+    padding-top: 20px;
+    height: 190px;
+  }
+}
+
+.contact__inner {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+}
+
+.contact__column {
+  width: 50%;
+}
+
+.contact__text {
+  margin: 0;
+}
